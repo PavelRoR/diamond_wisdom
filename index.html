@@ -217,6 +217,18 @@
     </footer>
     <!-- Скрипты-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <!-- <script src="js/scripts.js"></script> -->
+    <script>
+      $(document).ready(function() {
+        $("a.text-center").click(function(event) {
+            event.preventDefault();
+            var id = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({
+                scrollTop: top
+            }, 500);
+        });
+    });
+    </script>
   </body>
 </html>
