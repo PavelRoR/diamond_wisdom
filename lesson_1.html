@@ -13,8 +13,21 @@
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;amp;subset=cyrillic"/>
     <link rel="stylesheet" href="css/styles.css"/>
+    <!-- Put this script tag to the <head> of your page -->
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?146"></script>
+    <script type="text/javascript">
+    VK.init({apiId: API_ID, onlyWidgets: true});
+    </script>
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <section class="first_screen">
       <div class="container">
         <div class="jumbotron">
@@ -36,8 +49,13 @@
           </div>
           <div class="panel-body">
             <div class="row">
-              <div class="col-md-6 text-center">Комментарии ВК</div>
-              <div class="col-md-6 text-center">Комментарии ФБ</div>
+              <div class="col-md-6 text-center">
+                <!-- Put this div tag to the place, where the Comments block will be -->
+                <div id="vk_comments"></div>
+                <script type="text/javascript">
+                VK.Widgets.Comments("vk_comments", {limit: 15, width: "100", attach: false});
+              </script></div>
+              <div class="col-md-6 text-center"><div class="fb-comments" data-href="https://pavelror.github.io/diamond_wisdom/" data-width="100%" data-numposts="15"></div></div>
             </div>
           </div>
         </div>
@@ -45,7 +63,7 @@
     </section>
     <footer id="footer">
       <div class="container">
-        <p class="text-center">&laquo;Алмазная мудрость&raquo; || &copy; Все права защищены || 2017г.</p>
+        <p class="text-center">&laquo;Алмазная мудрость Тибета&raquo; || &copy; Все права защищены || 2017г.</p>
       </div>
     </footer>
   </body>
