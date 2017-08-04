@@ -8,3 +8,37 @@
 	display block
 	width 100%
 	height 200px
+.video
+	position relative
+	width 100%
+	margin 0 auto
+	cursor pointer
+.video iframe,
+.video img,
+.video video 
+	display block
+	height 249px
+	width inherit
+.video__play
+	position absolute
+	top 50%
+	left 50%
+	transform translate(-50%, -50%)
+	width 50px
+	height 45px
+	background-color #cf4949
+	text-align center
+	padding 7px 0 0 5px
+	border-radius 7px
+	border none
+	cursor pointer
+.video__play:after
+	content ""
+	display inline-block
+	width 0px
+	height 0px
+	border-style solid
+	border-width 10px 0 10px 24px
+	border-color transparent transparent transparent #fff 
+.js-video:hover .video__play
+	background-color #E73F45

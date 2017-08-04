@@ -18,25 +18,29 @@
     <!-- Превый экран-->
     <section class="first_screen">
       <div class="container">
-        <div class="jumbotron">
+        <div class="col-md-12 jumbotron">
           <h1>Алмазная мудрость Тибета в 21 веке</h1>
           <h2>Тибетский практический способ гарантированного получения желаемых результатов в жизни, проверенный 2500-летней  практикой</h2>
-          <div class="row">
-            <div class="col-md-8"><img class="img-thumbnail pull-left" src="img/attantion.jpg" alt="Восклицательный знак"/>
-              <p>Этим знаниям более 2,5 тысяч лет, но они были закрыты. Мы живем в уникальное время, когда эти сакральные знания стали доступны Вам</p><img class="img-thumbnail pull-left" src="img/attantion.jpg" alt="Восклицательный знак"/>
-              <p>Практики универсальны и работают на решение проблем и достижение целей в любой сфере жизни </p><img class="img-thumbnail pull-left" src="img/attantion.jpg" alt="Восклицательный знак"/>
-              <p>Практики воздействуют на самые глубинные причины происходящего с Вами. Поэтому они столь мощные</p>
-            </div>
-            <div class="col-md-4 form_group">
-              <h3 class="date">Вебинар онлайн ____, ____,___ августа в _____ Мск/Киев </h3>
-              <form class="form-group" action="#" method="POST">
-                <input class="form-control" type="text" name="name" id="name" placeholder="Введите Ваше имя"/>
-                <input class="form-control" type="email" name="email" id="email" placeholder="Введите Ваш email*" required="required"/>
-                <input class="btn btn-danger" type="submit" name="submit" value="Записаться"/>
-                <p class="politics">Нажимая на кнопку, Вы даете согласние на обработку персональных данных</p><a href="/politics.html" target="_blank">Политика конфиденциальности</a>
-              </form>
-            </div>
+        </div>
+        <div class="col-md-8 jumbotron">
+          <div class="row"><img class="img-thumbnail pull-left" src="img/attantion.jpg" alt="Восклицательный знак"/>
+            <p>Этим знаниям более 2,5 тысяч лет, но они были закрыты. Мы живем в уникальное время, когда эти сакральные знания стали доступны Вам</p>
           </div>
+          <div class="row"><img class="img-thumbnail pull-left" src="img/attantion.jpg" alt="Восклицательный знак"/>
+            <p>Практики универсальны и работают на решение проблем и достижение целей в любой сфере жизни</p>
+          </div>
+          <div class="row"><img class="img-thumbnail pull-left" src="img/attantion.jpg" alt="Восклицательный знак"/>
+            <p>Практики воздействуют на самые глубинные причины происходящего с Вами. Поэтому они столь мощные</p>
+          </div>
+        </div>
+        <div class="col-md-4 form_group jumbotron">
+          <h3 class="date">Вебинар онлайн ____, ____,___ августа в _____ Мск/Киев </h3>
+          <form class="form-group" action="#" method="POST">
+            <input class="form-control" type="text" name="name" id="name" placeholder="Введите Ваше имя"/>
+            <input class="form-control" type="email" name="email" id="email" placeholder="Введите Ваш email*" required="required"/>
+            <input class="btn btn-danger" type="submit" name="submit" value="Записаться"/>
+            <p class="politics">Нажимая на кнопку, Вы даете согласние на обработку персональных данных</p><a href="/politics.html" target="_blank">Политика конфиденциальности</a>
+          </form>
         </div>
       </div>
     </section>
@@ -162,30 +166,42 @@
         <h3 class="text-center">6 видео-ОТЗЫВов</h3>
         <div class="row">
           <div class="col-md-4">
-            <h4 class="text-center">За 1 год купили квартиру<br/><small>(отзыв Марины Хмеловской)</small></h4><br/>
-            <!-- iframe(src="", allowfullscreen).embed-responsive-item--><img class="embed-responsive-item img-thumbnail" src="img/testim.jpg" alt=""/>
+            <h4 class="text-center">За 1 год купили квартиру<br/><small>(отзыв Марины Хмеловской, Украина)</small></h4><br/>
+            <div class="video js-video" data-youtube="2sjpq9opONo"><img class="img-thumbnail video__img" src="img/marina.jpg" alt="Марина Хмеловская"/>
+              <button class="video__play" type="button"></button>
+            </div>
           </div>
           <div class="col-md-4">
-            <h4 class="text-center">Быстро нашла работу в чужой стране<br/><small>(отзыв Ксении Осауленко)</small></h4>
-            <!-- iframe(src="", allowfullscreen).embed-responsive-item--><img class="embed-responsive-item img-thumbnail" src="img/testim.jpg" alt=""/>
+            <h4 class="text-center">Быстро нашла работу в чужой стране<br/><small>(отзыв Ксении Осауленко, Германия)</small></h4>
+            <div class="video js-video" data-youtube="VDdyE1GuTxQ"><img class="img-thumbnail video__img" src="img/xenia.jpg" alt="Ксения Осауленко"/>
+              <button class="video__play" type="button"></button>
+            </div>
           </div>
           <div class="col-md-4">
-            <h4 class="text-center">Улучшились разные сферы жизни<br/><small>(отзыв Зебо Абдулаевой)</small></h4>
-            <!-- iframe(src="", allowfullscreen).embed-responsive-item--><img class="embed-responsive-item img-thumbnail" src="img/testim.jpg" alt=""/>
+            <h4 class="text-center">Улучшились разные сферы жизни<br/><small>(отзыв Зебо Абдулаевой, Дания)</small></h4>
+            <div class="video js-video" data-youtube="RNQr9hmwtBc"><img class="img-thumbnail video__img" src="img/zebo.jpg" alt="Зебо Абдулаева"/>
+              <button class="video__play" type="button"></button>
+            </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4">
-            <h4 class="text-center">Нашёл “вторую половинку”, создал семью<br/><small>(отзыв Благовеста Белчева)</small></h4>
-            <!-- iframe(src="", allowfullscreen).embed-responsive-item--><img class="embed-responsive-item img-thumbnail" src="img/testim.jpg" alt=""/>
+            <h4 class="text-center">Нашёл “вторую половинку”, создал семью<br/><small>(отзыв Благовеста Белчева, Болгария)</small></h4>
+            <div class="video js-video" data-youtube="e1vGtcyxPSc"><img class="img-thumbnail video__img" src="img/blagovest.jpg" alt="Благовест Белчев"/>
+              <button class="video__play" type="button"></button>
+            </div>
           </div>
           <div class="col-md-4">
-            <h4 class="text-center">Доходы бизнеса стабилизировались<br/><small>(отзыв Сергея Николайчука)</small></h4>
-            <!-- iframe(src="", allowfullscreen).embed-responsive-item--><img class="embed-responsive-item img-thumbnail" src="img/testim.jpg" alt=""/>
+            <h4 class="text-center">Доходы бизнеса стабилизировались<br/><small>(отзыв Сергея Николайчука, Украина)</small></h4>
+            <div class="video js-video" data-youtube="Jvie3-Dpu7c"><img class="img-thumbnail video__img" src="img/sergey.jpg" alt="Сергей Николайчук"/>
+              <button class="video__play" type="button"></button>
+            </div>
           </div>
           <div class="col-md-4">
-            <h4 class="text-center">Получила важные осознания<br/><small>(отзыв Надежды Коротковой)</small></h4><br/>
-            <!-- iframe(src="", allowfullscreen).embed-responsive-item--><img class="embed-responsive-item img-thumbnail" src="img/testim.jpg" alt=""/>
+            <h4 class="text-center">Получила важные осознания<br/><small>(отзыв Надежды Коротковой, Украина)</small></h4><br/>
+            <div class="video js-video" data-youtube="aE0jXIM31Ms"><img class="img-thumbnail video__img" src="img/nadejda.jpg" alt="Надежда Короткова"/>
+              <button class="video__play" type="button"></button>
+            </div>
           </div>
         </div>
       </div>
@@ -196,8 +212,7 @@
         <div class="jumbotron">
           <h3 class="text-center">Почему Вы читаете это? Вероятно, всё не просто так... </h3>
           <p class="text-center">В  жизни не бывает случайностей. Попробуйте откликнуться на подсказку судьбы, сказать “Да” и посетить наш открытый вебинар. На нем вы сможете сами составить мнение о системе, хотите ли вы ее практиковать. По окончании вебинара у вас будут четкие простые шаги к решению Вашей проблемы</p>
-          <div class="col-md-4"></div>
-          <div class="col-md-4">
+          <div class="last_form">
             <form class="form-group" action="#" method="POST">
               <input class="form-control" type="text" name="name" id="name" placeholder="Введите Ваше имя"/>
               <input class="form-control" type="email" name="email" id="email" placeholder="Введите Ваш email*" required="required"/>
@@ -205,7 +220,6 @@
               <p class="politics">Нажимая на кнопку, Вы даете согласние на обработку персональных данных</p><a href="/politics.html" target="_blank">Политика конфиденциальности</a>
             </form>
           </div>
-          <div class="col-md-4"></div>
         </div>
       </div>
     </section>
@@ -217,6 +231,7 @@
     </footer>
     <!-- Скрипты-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jquery-migrate.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
