@@ -7,19 +7,30 @@
     <meta name="author" content="Ольга Авсон"/>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
+    <meta http-equiv="Cache-Control" content="no-cache">
     <title>Алмазная мудрость. Урок 1</title>
     <link rel="icon" href="img/favicon.ico"/>
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
+    <!-- Put this script tag to the <head> of your page -->
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?146"></script>
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <section class="first_screen">
       <div class="container">
         <div class="jumbotron">
           <h1 class="text-center">Как тибетская мудрость меняет жизнь?</h1>
           <div class="col-md-6">
-           <div class="video js-video" data-youtube="uJRp8DkFhNU">
+            <div class="video js-video" data-youtube="uJRp8DkFhNU">
               <img src="img/lesson_1.jpg" class="img-thumbnail" id="lesson_1_img" alt="Урок первый">
               <button class="video__play" type="button"></button>
             </div>
@@ -40,7 +51,7 @@
         </div>
       </div>
     </section>
-    <section class="second_screen">
+    <section class="comments_screen">
       <div class="container">
         <div class="panel panel-warning">
           <div class="panel-heading">
@@ -49,21 +60,17 @@
           </div>
           <div class="panel-body">
             <div class="row">
-              <div class="col-md-12">
-                <div id="hypercomments_widget"></div>
+              <div class="col-md-6">
                 <script type="text/javascript">
-                _hcwp = window._hcwp || [];
-                _hcwp.push({widget:"Stream", widget_id: 94276});
-                (function() {
-                if("HC_LOAD_INIT" in window)return;
-                HC_LOAD_INIT = true;
-                var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
-                var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
-                hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/94276/"+lang+"/widget.js";
-                var s = document.getElementsByTagName("script")[0];
-                s.parentNode.insertBefore(hcc, s.nextSibling);
-                })();
+                VK.init({apiId: 6143154, onlyWidgets: true});
                 </script>
+                <!-- Put this div tag to the place, where the Comments block will be -->
+                <div id="vk_comments"></div>
+                <script type="text/javascript">
+                VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
+              </script></div>
+              <div class="col-md-6">
+                <div class="fb-comments" data-href="https://olgaavson.com/lesson_1.html" data-width="100%" data-numposts="5"></div>
               </div>
             </div>
           </div>
@@ -75,7 +82,7 @@
         <p class="text-center">&laquo;Алмазная мудрость Тибета&raquo; || &copy; Все права защищены || 2017г.</p>
       </div>
     </footer>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marck+Script&amp;amp;subset=cyrillic"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marck+Script&amp;amp;subset=cyrillic"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/jquery-migrate.min.js"></script>
     <script src="js/scripts.js"></script>
