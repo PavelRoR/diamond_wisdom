@@ -11,7 +11,6 @@
     <link rel="icon" href="img/favicon.ico"/>
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;amp;subset=cyrillic"/>
     <link rel="stylesheet" href="css/styles.css"/>
   </head>
   <body>
@@ -20,7 +19,10 @@
         <div class="jumbotron">
           <h1 class="text-center">Как тибетская мудрость меняет жизнь?</h1>
           <div class="col-md-6">
-            <iframe src="https://www.youtube.com/embed/uJRp8DkFhNU" class="img-thumbnail" allowfullscreen="allowfullscreen"></iframe>
+           <div class="video js-video" data-youtube="uJRp8DkFhNU">
+              <img src="img/lesson_1.jpg" class="img-thumbnail" id="lesson_1_img" alt="Урок первый">
+              <button class="video__play" type="button"></button>
+            </div>
           </div>
           <div class="col-md-6">
             <h2 class="text-center">Задание: Расскажите мне свою историю
@@ -34,7 +36,7 @@
             </ul>
           </div>
           <div class="clearfix"></div>
-            <p class="text-center">И самое главное, готовы ли Вы в самое ближайшее время узнать главный принцип устройства реальности, описанный в древних тибетских сутрах, который позволит вам воздействовать на неё самым верным образом, решая проблемы и достигая целей, как уже помог многим людям?</p>
+          <p class="text-center">И самое главное, готовы ли Вы в самое ближайшее время узнать главный принцип устройства реальности, описанный в древних тибетских сутрах, который позволит вам воздействовать на неё самым верным образом, решая проблемы и достигая целей, как уже помог многим людям?</p>
         </div>
       </div>
     </section>
@@ -47,8 +49,22 @@
           </div>
           <div class="panel-body">
             <div class="row">
-              <div class="col-md-6 text-center">Комментарии ВК</div>
-              <div class="col-md-6 text-center">Комментарии ФБ</div>
+              <div class="col-md-12">
+                <div id="hypercomments_widget"></div>
+                <script type="text/javascript">
+                _hcwp = window._hcwp || [];
+                _hcwp.push({widget:"Stream", widget_id: 94276});
+                (function() {
+                if("HC_LOAD_INIT" in window)return;
+                HC_LOAD_INIT = true;
+                var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+                var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+                hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/94276/"+lang+"/widget.js";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hcc, s.nextSibling);
+                })();
+                </script>
+              </div>
             </div>
           </div>
         </div>
@@ -59,5 +75,9 @@
         <p class="text-center">&laquo;Алмазная мудрость Тибета&raquo; || &copy; Все права защищены || 2017г.</p>
       </div>
     </footer>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marck+Script&amp;amp;subset=cyrillic"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jquery-migrate.min.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

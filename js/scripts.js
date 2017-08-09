@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 	$(".js-video").click(function(){
 		var dataYoutube = $(this).attr('data-youtube');
-		$(this).html('<iframe src="https://www.youtube.com/embed/'+ dataYoutube +'?autoplay=1" frameborder="0" class="img-thumbnail" allowfullscreen></iframe>')
+		$(this).html('<iframe src="https://www.youtube.com/embed/'+ dataYoutube +'?showinfo=0&autoplay=1" frameborder="0" class="img-thumbnail" allowfullscreen></iframe>')
 	});
 	
 
