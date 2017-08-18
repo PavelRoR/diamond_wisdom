@@ -58,7 +58,16 @@
 	.eighth_screen
 		h3
 			margin 10px 0 0
-			
+
+@media (max-width: 768px)
+	.video
+		width: 60%
+	.video__play
+		width 75px
+		height 65px
+		&:after
+			border-width: 15px 0 15px 35px;
+
 @media (max-width: 640px)
 	.hosL
 		display none
@@ -69,6 +78,10 @@
 			max-width 47%
 
 @media (max-width: 480px)
+	.first_screen,
+	.mail_screen,
+	.ninth_screen
+		background-attachment scroll
 	.itabl .row
 		padding 0 10px
 	#with_geshe .col-md-4
@@ -105,6 +118,11 @@
 		.col-md-8
 			h4
 				text-align center
+	#lesson_1_img, #lesson_2_img
+		min-height 215px
+	.video
+		width 100%
+		
 @media (max-width: 360px)
 	.container
 		width 91%
