@@ -3,22 +3,59 @@
 		margin-bottom 10px
 
 @media (max-width: 1024px)
-	.first_screen .container
-		width 91%
-@media (max-width: 980px)
 	.first_screen .col-md-8
+		height 396px
+	.first_screen .container,
+	.mail_screen .jumbotron
+		width 91%
+	.form-group
+		width 75%
+		margin 0 auto
+		
+@media (max-width: 980px)
+	.first_screen .col-md-8,
+	#with_geshe .col-md-4,
+	.seventh_screen .col-md-4
 		float left
-
-
-
-
-
-
-
-@media (max-width: 768px)
+		.pull-right
+			margin-right 15px
+			margin-bottom 10px
+	.first_screen .col-md-8
+		height 394px
+	#with_geshe .col-md-8
+		float none
+		width auto
 	.col-md-1.text-center
 		width 100%
 	.glyphicon.glyphicon-arrow-down
 		display block
 	.glyphicon.glyphicon-arrow-right
+		display none
+	.rel .col-md-4 .text-center
+		width 80%
+		margin 0 auto
+	.hosL
+		top 24px
+	.video iframe, .video img, .video video
+		width 70%
+		margin 0 auto
+		height 315px
+	.video__play
+		width 150px
+		height 100px
+		&:after
+			border-width 30px 0 30px 54px
+	.ninth_screen .jumbotron
+		width 100%
+	.last_form
+		width 70%
+		
+@media (max-width: 900px)
+	.first_screen .col-md-8
+		width 100%
+		display block
+		height auto
+		
+@media (max-width: 640px)
+	.hosL
 		display none
