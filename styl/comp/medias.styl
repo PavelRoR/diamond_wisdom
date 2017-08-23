@@ -4,7 +4,7 @@
 
 @media (max-width: 1024px)
 	.first_screen .col-md-8
-		height 396px
+		min-height: 475px
 	.first_screen .container,
 	.mail_screen .jumbotron
 		width 91%
@@ -78,6 +78,10 @@
 			max-width 47%
 
 @media (max-width: 480px)
+	.first_screen .col-md-8 {
+		height: auto
+	}
+
 	.first_screen,
 	.mail_screen,
 	.ninth_screen
