@@ -1,0 +1,57 @@
+<script type="text/javascript" src="https://autoweboffice.ru/js/jquery.mask.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("body").on("submit", ".form_newsletter", function(e) {
+			var message = "Укажите значения всех обязательных для заполнения полей!";
+			var ret = 0;
+			if ($(".name-block .field_value", this).val().length < 1) {
+				$(".name-block .field_value", this).css("border-color", "red");
+				ret = 1;
+			}
+			if ($(".email-block .field_value", this).val().length < 1) {
+				$(".email-block .field_value", this).css("border-color", "red");
+				ret = 1;
+			}
+			if ($("#p_p_acc", this).length > 0) {
+				if ($("#p_p_acc", this).prop("checked") == false) {
+					$(".form_newsletter_pp", this).css("border", "1px solid red");
+					ret = 1;
+				}
+			}
+			if (ret == 1) {
+				alert(message);
+				return false;
+			}
+		});
+		$(".phone-block input", this).keydown(function(e) {
+			if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 || (e.keyCode == 65 && (e.ctrlKey === true || e.metaKey === true)) || (e.keyCode >= 35 && e.keyCode <= 40)) {
+				return;
+			}
+			if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+				e.preventDefault();
+			}
+		});
+		$('body').on('change', '.surname-block input, .name-block input, .patronymic-block input, .phone-block input, .email-block input', function() {
+			$(this).css('border-color', '');
+		});
+		$('#Contact_date_of_birth').mask('00-00-0000', {
+			placeholder: 'ДД-ММ-ГГГГ'
+		});
+	});
+</script>
+<form action="https://amkm.autoweboffice.ru/?r=personal/newsletter/sub/add&amp;id=3490&amp;lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" class="form_newsletter" style="line-height: 20px; width: 200px; margin: 0px auto; background-color: rgb(255, 255, 255); border-radius: 3px; font-family: &quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif; border: 2px solid rgb(29, 46, 123);" target="">
+	<div class="form_newsletter_header" style="background-image: linear-gradient(to bottom, rgb(29, 46, 123), rgb(58, 74, 140)); padding: 8px 0px; text-align: center; font-size: 16px; vertical-align: middle; color: rgb(255, 255, 255); border-top-left-radius: 1px; border-top-right-radius: 1px; font-family: Arial,Helvetica,sans-serif; font-weight: normal; font-style: normal; text-decoration: none; display: none;">Подписка на рассылку</div>
+	<div class="form_newsletter_field ui-sortable" style="margin-bottom: 0px !important; margin-right: 0px !important; color: rgb(0, 0, 0);">
+		<div id="html_field_name" class="form_newsletter_input name-block" style="padding: 6px 12px;">
+			<div class="moving"></div><label style="text-align: left; display: block; margin-bottom: 5px; font-size: 14px; font-family: Arial,Helvetica,sans-serif; font-weight: normal; font-style: normal; text-decoration: none;">Имя<span class="required">*</span></label><input value="1" id="required_fields_name" name="required_fields[name]" placeholder="" type="hidden"><input class="field_value" maxlength="255" name="Contact[name]" style="padding: 4px 9px!important;box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);border-radius: 3px;background-color: #fff;border: 1px solid #ccc; width: 100%;height: 32px !important;-webkit-box-sizing : border-box;‌​-moz-box-sizing : border-box;box-sizing : border-box;" placeholder="" type="text"></div>
+		<div id="html_field_email" class="form_newsletter_input email-block" style="padding: 6px 12px;">
+			<div class="moving"></div><label style="text-align: left; display: block; margin-bottom: 5px; font-size: 14px; font-family: Arial,Helvetica,sans-serif; font-weight: normal; font-style: normal; text-decoration: none;">E-mail<span class="required">*</span></label><input value="1" id="required_fields_email" name="required_fields[email]" placeholder="" type="hidden"><input maxlength="255" name="Contact[email]" class="field_value" style="padding: 4px 9px!important;box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);border-radius: 3px;background-color: #fff;border: 1px solid #ccc; width: 100%;height: 32px !important;-webkit-box-sizing : border-box;‌​-moz-box-sizing : border-box;box-sizing : border-box;" placeholder="" type="text"></div>
+	</div>
+	<div class="form_newsletter_submit" style="padding: 12px; text-align: center;">
+	<input style="cursor: pointer; background-image: linear-gradient(to bottom, rgb(0, 136, 204), rgb(0, 68, 204)); color: rgb(255, 255, 255); text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25); background-color: rgb(0, 109, 204); border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border-radius: 3px; line-height: 20px; font-family: Arial,Helvetica,sans-serif; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none; height: 34px; width: 140px;" value="Записаться" type="submit">
+	</div>
+	<div>
+		<!-- Обязательный параметр. Не удалять и не изменять! --><input value="6" id="form_newsletter_id_newsletter" name="Contact[id_newsletter]" type="hidden">
+		<!-- API код канала рекламы --><input value="" id="form_newsletter_id_advertising_channel_page" name="Contact[id_advertising_channel_page]" type="hidden"> </div>
+</form>
+small.besides Вы получите приглашение strong только после | нажатия на ссылку активации, она придёт в письме p.politics Нажимая на кнопку, Вы даете согласние на обработку персональных данных a(href="/politics.html" target="_blank") Политика конфиденциальности

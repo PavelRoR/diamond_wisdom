@@ -1,19 +1,34 @@
-form(action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post" class="form-group")
-	<!-- Name -->
-	input(type="text" name="name" id="name" placeholder="Введите Ваше имя" class="form-control")
-	<!-- Email field (required) -->
-	input(type="email" name="email" id="email" placeholder="Введите Ваш email*" class="form-control" required)
-	<!-- Campaign token -->
-	<!-- Get the token at: https://app.getresponse.com/campaign_list.html -->
-	input(type="hidden" name="campaign_token" value="nfMbc")
-	<!-- Thank you page (optional) -->
-	input(type="hidden" name="thankyou_url" value="https://olgaavson.ru/confirm.html")
-	<!-- Forward form data to your page (optional) -->
-	input(type="hidden" name="forward_data" value="")
-	<!-- Subscriber button -->
-	input(type="submit" name="submit" value="Записаться" class="btn btn-danger")
-	small.besides Вы получите приглашение 
+//- <form action="https://amkm.autoweboffice.ru/?r=personal/newsletter/sub/add&amp;id=3490&amp;lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" class="form_newsletter form-group"  target="_blank">
+//- 	<div class="form_newsletter_field ui-sortable">
+//- 		<div id="html_field_name" class="form_newsletter_input name-block">
+//- 			<div class="moving"></div><input value="1" id="required_fields_name" name="required_fields[name]" placeholder="" type="hidden"><input class="" maxlength="255" name="Contact[name]"   type="text"></div>
+//- 		<div id="html_field_email" class="form_newsletter_input email-block">
+//- 			<div class="moving"></div><input value="1" id="required_fields_email" name="required_fields[email]" placeholder="" type="hidden"><input maxlength="255" name="Contact[email]" class="" placeholder="Введите Ваш email" type="text"></div>
+//- 	</div>
+//- 	<div class="form_newsletter_submit">
+//- 	<input value="Записаться" type="submit" class="btn btn-danger">
+//- 	</div>
+//- 	<div>
+//- 		<!-- Обязательный параметр. Не удалять и не изменять! --><input value="6" id="form_newsletter_id_newsletter" name="Contact[id_newsletter]" type="hidden">
+//- 		<!-- API код канала рекламы --><input value="" id="form_newsletter_id_advertising_channel_page" name="Contact[id_advertising_channel_page]" type="hidden"> </div>
+//- 	<small class="besides">Вы получите приглашение <strong>только после</strong> нажатия на ссылку активации, она придёт в письме</small>
+//- 	<p class="politics">Нажимая на кнопку, Вы даете согласние на обработку персональных данных</p>
+//- 	<a href="/politics.html" target="_blank">Политика конфиденциальности</a>
+//- </form>
+form.form_newsletter.form-group( action="https://amkm.autoweboffice.ru/?r=personal/newsletter/sub/add&id=3490&lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="_blank")
+	h3.text-center Получить древние знания в виде pdf-книги и приглашения на вебинары!
+	<!-- Обязательный параметр. Не удалять и не изменять! -->
+	input(type="hidden" value="6" name="Contact[id_newsletter]")
+	<!-- API код канала рекламы -->
+	input(type="hidden" value="0" name="Contact[id_advertising_channel_page]")
+	div
+		input.field_value.form-control(maxlength="255" name="Contact[name]" type="text" placeholder="Введите Ваше имя*")
+	div
+		input.field_value.form-control(maxlength="255" name="Contact[email]" type="text"  placeholder="Введите Ваш email*")
+	div
+		input.btn.btn-danger(value="Получить" type="submit")
+	small.besides Вы получите книгу и приглашение 
 		strong только после 
 		| нажатия на ссылку активации, она придёт в письме
-	p.politics Нажимая на кнопку, Вы даете согласние на обработку персональных данных
+	p.politics Нажимая на кнопку, Вы даете согласие на обработку персональных данных. Никакого спама. Отписка в любой момент
 	a(href="/politics.html" target="_blank") Политика конфиденциальности
