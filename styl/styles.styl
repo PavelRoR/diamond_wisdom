@@ -512,9 +512,61 @@ h4
 @import 'comp/ninth_screen'
 /*! Подвал */
 @import 'comp/footer'
-/*! Медиа */
-@import 'comp/medias'
 
+.contacts,
+.products {
+  min-height: calc(100vh - 40px);
+}
+
+.contacts .container,
+.products .container {
+  width: 68%;
+  border-radius: 6px;
+}
+
+.contacts strong,
+.products strong {
+  font-weight: 900
+}
+.products .row {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;  
+}
+.card {
+  position: relative;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  -webkit-background-clip: border-box;
+  -moz-background-clip: border-box;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
+  min-height: 200px;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.card-title {
+  margin-bottom: .75rem;
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.card-link {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
 .main_404
   display table
   background-image url(../img/Ancient.jpg)
@@ -528,3 +580,28 @@ h4
     display table-cell
     vertical-align middle
     background-color rgba(255,255,255,.95)
+#left-content h3
+  text-align left
+  margin-top 30px
+#left-content
+  list-style none
+  counter-reset: li
+  li:before
+    content: counters(li,".") ". "; 
+    counter-increment: li;
+    float: left;
+    min-height: 1px;
+    height: 1px;
+    margin-right: 10px;
+  ol
+    list-style none
+    counter-reset: li
+    li:before
+      content: counters(li,".") ". "; 
+      counter-increment: li;
+      float: left;
+      min-height: 1px;
+      height: 1px;
+      margin-right: 10px;
+/*! Медиа */
+@import 'comp/medias'
