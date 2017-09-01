@@ -96,82 +96,128 @@ html(lang="ru-RU")
 						img(src="img/answer.jpg", alt="100% управление жизнью" class="img-thumbnail")
 						h4.text-center Решения
 						p.text-center Ваша жизнь становится более благополучной, уходят "неразрешимые проблемы" и Вы достигаете даже труднодостижимых целей
-		section.pay_table#table
+		section.eighth_screen#recomends
+			.container
+				h3.text-center Нас рекомендуют
+				.row
+					.col-md-4
+						h4.text-center.one_line Ирина Майструк: 
+						p.text-center Наконец начала жить так как давно хотела, много путешествовать
+						.video.js-video(data-youtube="nyiKkZBBjT8")
+							img.img-thumbnail.video__img(src="img/irina.jpg", alt="Ирина Майструк")
+							button.video__play(type="button")
+					.col-md-4
+						h4.text-center Елена Тарарина: 
+						p.text-center За 3 года вышла на международный уровень, денежный оборот увеличился в 10 раз; количество учеников в 4 раза
+						.video.js-video(data-youtube="36aOGxdXH8E")
+							img.img-thumbnail.video__img(src="img/elena.jpg", alt="Елена Тарарина")
+							button.video__play(type="button")
+					.col-md-4
+						h4.text-center.one_line Евгений Дейнеко: 
+						p.text-center Через 2 месяца применения КМ доходы выросли в 4 раза
+						.video.js-video(data-youtube="aoicEJD40E8")
+							img.img-thumbnail.video__img(src="img/deyneco.jpg", alt="Евгений Дейнеко")
+							button.video__play(type="button")
+				.row
+					.col-md-4
+						h4.text-center.one_line Янина Зи и Андрей Слабинский: 
+						p.text-center Всё, что мы сейчас имеем - благодаря знаниям КМ
+						.video.js-video(data-youtube="0ks43tJm8-Y")
+							img.img-thumbnail.video__img(src="img/zi.jpg", alt="Янина Зи и Андрей Слабинский")
+							button.video__play(type="button")
+					.col-md-4
+						h4.text-center Надежда Короткова: 
+						p.text-center Уровень счастья, здоровья и финансового благополучия становится всё лучше и лучше
+						.video.js-video(data-youtube="hfpXaTn-S9o")
+							img.img-thumbnail.video__img(src="img/korotkova.jpg", alt="Надежда Короткова")
+							button.video__play(type="button")
+					.col-md-4
+						h4.text-center Елена Йоргенсен: 
+						p.text-center Продала квартиру необычайно дорого и нашла свою любовь, создала новую семью
+						.video.js-video(data-youtube="cobiIsdLlQc")
+							img.img-thumbnail.video__img(src="img/yorg.jpg", alt="Елена Йоргенсен")
+							button.video__play(type="button")
+
+		section.pay_table
 			.container
 				h3.text-center Выберите свой пакет
+				p.for_table (Необходимо листать таблицу пальцем в право, чтобы увидеть все варианты)
 				.table_container
-					table.table.table-responsive
-						thead.thead
-							tr
-								th
-									h4 Состав пакета
-								th#silver
-									h4 Серебро
-								th#gold
-									h4 Золото
-								th#diamond
-									h4 Диамант
-						tbody
-							tr
-								td
-									p 4 занятия онлайн
-								td
-									p.yes Да
-								td
-									p.yes Да
-								td
-									p.yes Да
-							tr
-								td
-									p Записи занятий
-								td
-									p.yes Да
-								td
-									p.yes Да
-								td
-									p.yes Да
-							tr
-								td
-									p Поддержка, воодушевление, ответы на вопросы в группе в фейсбуке
-								td
-									p.yes Да
-								td
-									p.yes Да
-								td
-									p.yes Да
-							tr
-								td
-									p 2 консультации Ольги Авсон (Сильвер две по 0,5ч, Диамант две по *1ч)
-								td.no
-									p Нет
-								td
-									p.yes Да
-								td
-									p.yes Да
-							tr
-								td
-									p Билет на семинар геше Майкла Роуча в Киеве 22-23 сентября
-								td.no
-									p Нет
-								td.no
-									p Нет
-								td
-									p.yes Да
-							tr
-								td
-									p.alert.big Цена до ___ августа
-								td
-									p.deleted 25 дол.
-									p 19 дол.
-									a(href="" target="_blank" class="btn btn-success") Выбрать
-								td
-									p.deleted 100дол.
-									p 90 дол.
-									a(href="" target="_blank" class="btn btn-success") Выбрать
-								td
-									p.deleted 500дол.
-									p 470дол.
-									a(href="" target="_blank" class="btn btn-success") Выбрать
+					.table-responsive
+						table.table#table
+							thead.thead
+								tr
+									th
+										h4 Состав пакета
+									th#silver
+										h4 Серебро
+									th#gold
+										h4 Золото
+									th#diamond
+										h4 Диамант
+							tbody
+								tr
+									td
+										p 4 занятия онлайн
+									td
+										p.yes Да
+									td
+										p.yes Да
+									td
+										p.yes Да
+								tr
+									td
+										p Записи занятий
+									td
+										p.yes Да
+									td
+										p.yes Да
+									td
+										p.yes Да
+								tr
+									td
+										p Поддержка, воодушевление, ответы на вопросы в группе в фейсбуке
+									td
+										p.yes Да
+									td
+										p.yes Да
+									td
+										p.yes Да
+								tr
+									td
+										p 2 консультации Ольги Авсон 
+									td.no
+										p Нет
+									td
+										p.yes Да
+										| 2 сессии по 30 мин.
+									td
+										p.yes Да
+										| 2 сессии по 60 мин.
+								tr
+									td
+										p Билет на семинар геше Майкла Роуча в Киеве 22-23 сентября
+									td.no
+										p Нет
+									td.no
+										p Нет
+									td
+										p.yes Да
+								tr
+									td
+										p.alert.big Цена до 31 августа (18:59)
+									td
+										p.deleted 30 дол.
+										p 25 дол.
+										a(href="http://amkm.autoweboffice.ru/?r=ordering/cart/as1&id=44&clean=true&lg=ru" target="_blank" class="btn btn-lg btn-success") Выбрать
+									td
+										p.deleted 110дол.
+										p 100 дол.
+										a(href="http://amkm.autoweboffice.ru/?r=ordering/cart/as1&id=45&clean=true&lg=ru" target="_blank" class="btn btn-lg btn-success") Выбрать
+									td
+										p.deleted 530дол.
+										p 500дол.
+										a(href="http://amkm.autoweboffice.ru/?r=ordering/cart/as1&id=46&clean=true&lg=ru" target="_blank" class="btn btn-lg btn-success") Выбрать
 
 				p.alert Оплатившим в течение первых 2-х часов после эфира подарок: дополнительное живое онлайн-занятие с Ольгой Авсон для ответа на Ваши вопросы по поводу Ваших ситуаций и практики КМ !!!
 				p.text-center 10% от собранных оплат мы отправим на поддержку проекта сохранения наследия Тибета (ACIP) и иные благотворительные цели

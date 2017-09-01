@@ -103,21 +103,24 @@ caption {
   text-align: left;
 }
 th h4 {
-  text-align: left;
-  color #fff !important
+  text-align: center;
   font-weight normal !important
 }
 .table {
   max-width: 100%;
   margin 0 auto 20px
+  overflow-x auto;
+  text-align left
 }
 .no
   background-color #eee
   color #c00
+.table p
+  margin-bottom 0
 .thead
-  background-color #212529
-  color #fff
-  font-weight 900
+  border: 1px solid #ddd;
+  h4
+    margin 15px 0
 .deleted
   position relative
   margin-top 30px
@@ -130,7 +133,7 @@ th h4 {
     height 2px
     background-color #c00
     top 12px
-    left 18px
+    left 58px
   &:before
     transform rotate(11deg)
   &:after
@@ -143,17 +146,19 @@ tbody tr td
 thead tr th
   text-align center
   vertical-align middle
+  width 25%
 tbody tr td:first-child
 thead tr th:first-child
   text-align left
 #silver
-  background-color rgba(192,192,192,.4)  
+  background-image: linear-gradient(to top, #CACACA, #fcfcfc, #CACACA);
+  text-shadow: 1px 1px 0px #fff;
 #gold
-  background-color rgba(255,215,0, .4)
+  background-image: linear-gradient(to top,#A99211,#FFE96B,#A99211);
+  text-shadow 1px 1px 1px #fff
 #diamond
-  background-color rgb(245,245,245)
-  h4
-    color #000 !important
+  background-image: linear-gradient(#FAEBD7,transparent,#FAEBD7);
+  text-shadow: 1px 1px 0 #ddd;
 .alert
   font-weight 900
   color rgb(204, 65, 37);
@@ -163,6 +168,12 @@ thead tr th:first-child
   font-size 24px
 .yes
   color #449d44
+.btn-success
+  margin-top 20px
+#recomends 
+  padding-bottom 0
+  .one_line
+    margin-bottom 36px
 #footer
   background-color #240903
   color #fff
@@ -179,8 +190,7 @@ thead tr th:first-child
   border-top: 1px solid #dddddd;
 }
 .table > thead > tr > th {
-  vertical-align: bottom;
-  border-bottom: 2px solid #dddddd;
+  vertical-align: middle;
 }
 .table > caption + thead > tr:first-child > th,
 .table > colgroup + thead > tr:first-child > th,
@@ -353,6 +363,7 @@ table th[class*="col-"] {
     -ms-overflow-style: -ms-autohiding-scrollbar;
     border: 1px solid #dddddd;
   }
+ 
   .table-responsive > .table {
     margin-bottom: 0;
   }
@@ -390,3 +401,16 @@ table th[class*="col-"] {
     border-bottom: 0;
   }
 }
+
+@media (max-width: 768px)
+  .table_container
+      width 100%
+  .pay_first_screen .container
+      width 100%
+@media (max-width: 640px)
+  body
+    font-size 1.7em
+    word-wrap: break-word
+  .for_table
+    display block
+    text-align center !important

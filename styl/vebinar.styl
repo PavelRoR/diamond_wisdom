@@ -22,8 +22,8 @@ body
 	.col-md-8
 		margin-right: 1%;
 		width: 65.6%;
-		min-height: 328px;
-		padding: 6.4% 5% 4.4%
+		min-height: 511px;
+		padding: 4% 5%
 	.col-md-4
 		min-height 512px
 	h1
@@ -46,11 +46,30 @@ body
 	display block
 	margin 20px auto
 	width 30%
-
-
+#show
+	color darkblue
+	cursor pointer
+	border-bottom 1px dashed
+.rules
+	display none
+.rules li
+	font-size 16px
 			
 #footer
+	width 100%
 	background-color #240903
 	color #fff
 	padding 1% 0 .5%
 	font-size 12px
+	
+@media (max-width: 768px)
+	.vebinar h1
+		font-size 27px
+	.vebinar .col-md-8
+		width 100%
+	.img-thumbnail
+		width 100%
+@media (max-width: 640px)
+	body
+		font-size 1.7em
+		word-wrap break-word
