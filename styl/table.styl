@@ -174,6 +174,8 @@ thead tr th:first-child
   padding-bottom 0
   .one_line
     margin-bottom 36px
+.for_table
+  display none
 #footer
   background-color #240903
   color #fff
@@ -403,10 +405,14 @@ table th[class*="col-"] {
 }
 
 @media (max-width: 768px)
+  .container
+    width 90%
   .table_container
-      width 100%
+    width 100%
   .pay_first_screen .container
-      width 100%
+    width 100%
+  .low_screen #with_geshe
+    width 100%
 @media (max-width: 640px)
   body
     font-size 1.7em
@@ -414,3 +420,7 @@ table th[class*="col-"] {
   .for_table
     display block
     text-align center !important
+  .to-table
+    width 80%
+  #recomends .one_line
+    margin-bottom 10px
