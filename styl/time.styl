@@ -1,3 +1,7 @@
+brown_h1 = #85200c
+brown = #91230D
+vanile = #FFFAF0
+
 *
 	margin 0
 	padding 0
@@ -5,5 +9,110 @@
 	outline 0
 
 body
-  font-family: 'Roboto', sans-serif
-  font-size 18px
+	font-family: 'Roboto', sans-serif
+	font-size 18px
+.time
+	padding 40px 0
+	background-image url(../img/time.jpg)
+	background-repeat no-repeat
+	background-position center top
+	background-attachment fixed
+	background-size cover
+	// height calc(100vh - 50px)
+	width 100%
+	.jumbotron
+		background-color rgba(#fff,.85)
+		border-radius 10px
+		padding 48px
+		h1
+			color brown_h1
+			text-align center
+			font-size 46px
+			font-weight 900
+			margin-top -1%
+			margin-bottom 20px
+		h2
+			font-size 32px
+			text-align center
+			color brown
+			margin-top 10px
+			margin-bottom 20px
+			
+		h3
+			color brown
+			margin-bottom: 20px;
+			margin-top: 0;
+.form_newsletter
+	width: 60%;
+	margin: 0 auto
+	border 1px solid #aaa
+	border-radius 5px
+	overflow hidden
+	padding 20px
+	background-color rgba(vanile, .8)
+.ui-sortable
+	margin-bottom 15px
+.form_newsletter_submit,
+#html_field_name,
+#html_field_email
+	width: 31%;
+	float left
+	margin-bottom 10px
+	input
+		padding 5px 10px
+		border 0
+#html_field_name,
+#html_field_email
+	margin-left 6.7px
+	input
+		border: 1px solid #aaa;
+		box-shadow: 0 0 2px 2px #eee inset;
+		box-sizing border-box
+		
+.form_newsletter_submit
+	float right
+	width 34.6%
+	input
+		padding: 5px;
+		border-radius 4px
+		width: 100%;
+		display: inline-block;
+	
+.politics,
+.politics + a
+	display block 
+	font-size: 11px !important;
+	text-align: center;
+	line-height: 1;
+	margin-top: 10px;
+	
+#footer
+	width 100%
+	background-color #240903
+	color #fff
+	padding 1% 0 .5%
+	font-size 12px
+.clf
+	clear both
+@media (max-width: 1024px)
+	.form_newsletter
+		width 90%
+
+@media (max-width: 640px)
+	.time .jumbotron
+		width 90%
+		h1 
+			font-size 2em
+		h2
+			font-size 1.5em
+	.form_newsletter
+		width 100%
+		
+	#html_field_email,
+	#html_field_name,
+	.form_newsletter_submit
+		width 100%
+		float none
+		margin-right 0
+		margin-left 0
+		
