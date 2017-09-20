@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Ольга Авсон" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <title>Алмазная мудрость. Проект «Расширяем время»</title>
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;amp;subset=cyrillic" />
+    <link rel="stylesheet" href="css/time.css" />
+</head>
+
+<body>
+    <section class="time">
+        <div class="container jumbotron">
+            <h1 class="text-center">Проект «Расширяем время»</h1>
+            <p class="text-center">Время. Можно ли расширить его рамки, чтобы успевать больше? Тибетская мудрость учит, что весь наш мир происходит из ментальных семян в нашем сознании. «Если семена сели в автобус, то Вселенной придётся подвинуться» - говорит геше Майкл Роуч</p>
+            <p class="text-center">Приходите на проект «Расширяем время», где мы используя методы из тибетских сутр будем созавать причины для того чтобы у Вас появилось реально больше свободного времени, чтобы вы могли успевать больше и были более довольны результатами.</p>
+            <h3 class="text-center">Оставьте свои контакты и мы пришлём детали</h3>
+            <script type="text/javascript" src="https://autoweboffice.ru/js/jquery.mask.js"></script>
+            <script type="text/javascript">
+            $(function() { $("body").on("submit", ".form_newsletter", function(e) { var message = "Укажите значения всех обязательных для заполнения полей!"; var ret = 0; if ($(".name-block .field_value", this).val().length < 1) { $(".name-block .field_value", this).css("border-color", "red");
+                        ret = 1; } if ($(".email-block .field_value", this).val().length < 1) { $(".email-block .field_value", this).css("border-color", "red");
+                        ret = 1; } if ($("#p_p_acc", this).length > 0) { if ($("#p_p_acc", this).prop("checked") == false) { $(".form_newsletter_pp", this).css("border", "1px solid red");
+                            ret = 1; } } if (ret == 1) { alert(message); return false; } });
+                $(".phone-block input", this).keydown(function(e) { if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 || (e.keyCode == 65 && (e.ctrlKey === true || e.metaKey === true)) || (e.keyCode >= 35 && e.keyCode <= 40)) { return; } if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) { e.preventDefault(); } });
+                $('body').on('change', '.surname-block input, .name-block input, .patronymic-block input, .phone-block input, .email-block input', function() { $(this).css('border-color', ''); });
+                $('#Contact_date_of_birth').mask('00-00-0000', { placeholder: 'ДД-ММ-ГГГГ' }); });
+            </script>
+            <form action="https://amkm.autoweboffice.ru/?r=personal/newsletter/sub/add&amp;id=3490&amp;lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" class="form_newsletter" target="_blank">
+                <div class="form_newsletter_header"></div>
+                <div class="form_newsletter_field ui-sortable">
+                    <div id="html_field_name" class="form_newsletter_input name-block">
+                        <div class="moving"></div>
+                        <input value="1" id="required_fields_name" name="required_fields[name]" placeholder="" type="hidden">
+                        <input class="field_value" maxlength="255" name="Contact[name]" placeholder="Ваше имя*" type="text">
+                    </div>
+                    <div id="html_field_email" class="form_newsletter_input email-block">
+                        <div class="moving"></div>
+                        <input value="1" id="required_fields_email" name="required_fields[email]" placeholder="" type="hidden">
+                        <input maxlength="255" name="Contact[email]" class="field_value" placeholder="Ваш email*" type="text">
+                    </div>
+                </div>
+                <div class="form_newsletter_submit">
+                    <input value="ПОЛУЧИТЬ" type="submit"> </div>
+                <div>
+                    <!-- Обязательный параметр. Не удалять и не изменять! -->
+                    <input value="10" id="form_newsletter_id_newsletter" name="Contact[id_newsletter]" type="hidden">
+                    <!-- API код канала рекламы -->
+                    <input value="0" id="form_newsletter_id_advertising_channel_page" name="Contact[id_advertising_channel_page]" type="hidden"> </div>
+            </form>
+        </div>
+    </section>
+    <!-- Подвал-->
+    <footer id="footer">
+        <div class="container">
+            <p class="text-center">&laquo;Алмазная мудрость Тибета&raquo; || &copy; Все права защищены || 2017г.</p>
+            <p class="text-center"> <a href="https://olgaavson.com/?page=contacts" target="_blank">Контактная информация </a>|| <a href="/products.html" target="_blank">Продукты</a></p>
+            <p class="text-center"><a href="/dogovor-oferty.html" target="_blank">Публичная оферта</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
